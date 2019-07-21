@@ -1,0 +1,210 @@
+$pink: #FF67D1;
+$pinkHover: #ca57a7;
+$purple: #8C3CF6;
+$purpleHover: #7547b1;
+$lightGrey: #c7c4d8;
+$darkGrey: #9694a4;
+$lightBlueBackground: #F6F8FF;
+$lightWhiteBackground: #FEFEFF;
+$fontColor: #343B5C;
+
+*
+{
+	-webkit-transition: 400ms;
+	-moz-transition: 400ms;
+	-ms-transition: 400ms;
+	-o-transition: 400ms;
+	transition: 400ms
+}
+
+.hidden{display: none}
+html{padding: 0;margin: 0;}
+
+body
+{
+	background-color: #fff;
+	color: $fontColor;
+	margin: 0;
+	padding: 0;
+	font-family: Raleway, sans-serif;
+}
+
+.pink-button{background-color: $pink;color: #fff;cursor: pointer;}
+.pink-button:hover{background-color: $pinkHover;}
+.purple-button{background-color: $purple;color: #fff;cursor: pointer;}
+.purple-button:hover{background-color: $purpleHover;}
+input:focus, button:focus{outline: none;}
+.clearfix{clear: both}
+
+
+/**************** Navbar ******************/
+.navbar{padding-left: 0}
+
+.navbar .navbar-brand
+{
+	color: $fontColor;
+	font-family: Raleway, sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.navbar .navbar-brand:hover{text-decoration: none;color: $purple}
+.navbar .navbar-link a
+{
+	color: $fontColor;
+	font-family: Raleway, sans-serif;
+	font-weight: bold;
+	letter-spacing: 1px
+}
+
+.navbar .navbar-link a:hover{text-decoration: none;color: $lightGrey;}
+
+
+/**************** Intro ******************/
+.intro{padding-top: 70px;padding-bottom: 70px}
+.intro .row h2{font-weight: 900;margin-bottom: 50px}
+.intro .row p{margin-bottom: 10px;font-size: 13px}
+.intro .row form{margin-bottom: 10px}
+
+.intro .row form input
+{
+	margin: 10px 0 10px 0;
+    height: 35px;
+    width: 65%;
+    font-size: 13px;
+    padding-left: 12px;
+    background-color: #FBFDFF;
+    border: 1px solid #DCE3EB;
+    border-radius: 5px 0 0 5px
+}
+
+.intro .row form button
+{
+	margin-left: -5px;
+	background-color: $lightGrey;
+	color: #fff;
+	width: 100px;
+	height: 35px;
+	border-style: none;
+	font-size: 13px;
+	text-transform: uppercase;
+	border-radius: 0 5px 5px 0
+}
+
+.intro .row form button:hover
+{
+	background-color: $darkGrey;
+	color: #fff;
+	cursor: pointer;
+}
+
+@media (max-width: 350px)
+{
+	.intro .row form input{margin-bottom: 0;border-radius: 0;}
+	.intro .row form button{margin-left: 0;border-radius: 0;}
+}
+
+.intro .row .buttons button
+{
+	border: none;
+	color: #fff;
+	width: 140px;
+    	height: 45px;
+   	text-transform: uppercase;
+    	border-radius: 5px;
+    	font-size: 15px;
+    	margin-right: 10px;
+    	margin-top: 15px;
+}
+
+.intro .row .images img{min-width: 100%;}
+
+/**************** Wallet ******************/
+.wallet-container
+{
+	background-image: linear-gradient($lightBlueBackground, $lightWhiteBackground);
+	padding-top: 60px;
+	padding-bottom: 60px
+}
+
+.wallet-container h3{font-weight: 900;padding-bottom: 50px}
+.wallet .row .drop-down{width: 70%}
+
+.wallet .row .drop-down h6
+{
+	background-color: $lightWhiteBackground;
+	padding: 20px 20px;
+	font-weight: 900;
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
+.wallet .row .drop-down p
+{
+    padding: 10px 20px;
+    font-size: 15px;
+    border-top: 1px solid #DADCE9;
+    border-bottom: 1px solid #DADCE9;
+    min-height: 110px
+}
+
+.wallet .row button.purple-button
+{
+	margin-top: 30px;
+	border: none;
+	width: 200px;
+    height: 45px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+/**************** Swap ******************/
+.swap-container{background-color: $lightBlueBackground;padding: 70px 0;}
+.swap-container h3{font-weight: 900;margin-bottom: 60px}
+.swap{line-height: 1.8}
+.swap h6{font-weight: 900;}
+.swap p{font-size: 15px;}
+.swap .row .step{background-color: #fff;padding: 20px 25px;margin-bottom: 20px}
+.swap .row .step i{margin-bottom: 20px;color: $purple;}
+.swap .row .step h6{margin-bottom: 15px}
+
+.swap-container button.purple-button
+{
+	margin-top: 30px;
+	border: none;
+	width: 200px;
+    height: 45px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+/**************** Footer ******************/
+.footer{padding-top: 70px;padding-bottom: 30px}
+.footer .row .section{margin-bottom: 45px}
+.footer .row h5{font-weight: 900;color: $fontColor;margin-bottom: 20px}
+.footer .row p{max-width: 90%;font-size: 14px;line-height: 1.8;margin-bottom: 8px}
+.footer .row a:hover{color: $purple;text-decoration: none;}
+
+
+/**************** Contact ******************/
+.contact{height: 100px}
+
+.contact .icon
+{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+    padding: 7px 5px 5px 10px;
+    background-color: $darkGrey;
+    color: #fff;
+    float: left;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.contact .icon:hover{background-color: $lightGrey;}
+
